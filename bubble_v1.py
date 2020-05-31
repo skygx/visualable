@@ -25,7 +25,7 @@ def main():
 
 
     # Step 1: Prepare Data
-    midwest = pd.read_csv("midwest_filter.csv")
+    midwest = pd.read_csv("./data/midwest_filter.csv")
 
     # As many colors as there are unique midwest[ category ]
     categories = np.unique(midwest['category'])
@@ -62,7 +62,7 @@ def main():
     plt.yticks(fontsize=12)
     plt.title("Bubble Plot with Encircling", fontsize=22)
     plt.legend(fontsize=12)
-    plt.savefig('bubble.jpg')
+    plt.savefig('./jpg/bubble.jpg')
     plt.show()
 
 

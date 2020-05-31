@@ -20,7 +20,7 @@ warnings.filterwarnings(action="once")
 
 
 def main():
-    midwest = pd.read_csv("midwest_filter.csv")
+    midwest = pd.read_csv("./data/midwest_filter.csv")
 
     # Prepare Data
     # Create as many colors as there are unique midwest[ category ]
@@ -43,7 +43,7 @@ def main():
     plt.yticks(fontsize=12)
     plt.title("Scatterplot of Midwest Area vs Population", fontsize=22)
     plt.legend(fontsize=12)
-    plt.savefig('scatt.jpg')
+    plt.savefig('./jpg/scatt.jpg')
     plt.show()
 
 

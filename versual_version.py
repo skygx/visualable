@@ -18,22 +18,20 @@ import seaborn as sns
 import warnings
 warnings.filterwarnings(action="once")
 
-
-
 def main():
     large = 22;
     med = 16;
     small = 12
-    params = {axes.titlesize: large,
-              legend.fontsize: med,
-              figure.figsize: (16, 10),
-              axes.labelsize: med,
-              axes.titlesize: med,
-              xtick.labelsize: med,
-              ytick.labelsize: med,
-              figure.titlesize: large}
+    params = {'axes.titlesize': large,
+              'legend.fontsize': med,
+              'figure.figsize': (16, 10),
+              'axes.labelsize': med,
+              'axes.titlesize': med,
+             'xtick.labelsize': med,
+              'ytick.labelsize': med,
+              'figure.titlesize': large}
     plt.rcParams.update(params)
-    plt.style.use(seaborn - whitegrid)
+    plt.style.use('seaborn-whitegrid')
     sns.set_style("white")
     # %matplotlib
     # inline

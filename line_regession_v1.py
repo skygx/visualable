@@ -21,7 +21,7 @@ warnings.filterwarnings(action="once")
 
 def main():
     # Import Data
-    df = pd.read_csv("mpg_ggplot2.csv")
+    df = pd.read_csv("./data/mpg_ggplot2.csv")
     df_select = df.loc[df.cyl.isin([4, 8]), :]
 
     # Plot
@@ -33,8 +33,10 @@ def main():
     # Decorations
     gridobj.set(xlim=(0.5, 7.5), ylim=(0, 50))
     plt.title("Scatterplot with line of best fit grouped by number of cylinders", fontsize=20)
-    plt.savefig('line_regression.jpg')
+    plt.savefig('./jpg/line_regression.jpg')
     plt.show()
+
+
 
 
 if __name__ == "__main__":
